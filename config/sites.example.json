@@ -1,0 +1,37 @@
+[
+  {
+    "id": "01",
+    "name": "国家企业信用信息公示系统",
+    "url": "https://www.gsxt.gov.cn/index.html",
+    "manual": true,
+    "note": "官方工商登记信息，可能需要过验证。"
+  },
+  {
+    "id": "02",
+    "name": "信用中国",
+    "url": "https://www.creditchina.gov.cn/",
+    "manual": true,
+    "note": "手动搜索并点进信用信息详情页后按回车截图。"
+  },
+  {
+    "id": "03",
+    "name": "中国裁判文书网",
+    "url": "https://wenshu.court.gov.cn/",
+    "manual": true,
+    "note": "通常需要登录或验证码。",
+    "stripPrefixes": [
+      "发行人",
+      "子公司",
+      "董事",
+      "监事",
+      "高管"
+    ]
+  },
+  {
+    "id": "04",
+    "name": "百度",
+    "url": "https://www.baidu.com/",
+    "manual": false,
+    "note": "公开搜索，不用登录，适合先拿它试跑。"
+  }
+]

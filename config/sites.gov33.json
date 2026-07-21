@@ -1,0 +1,208 @@
+[
+  {
+    "id": "01",
+    "name": "信用中国",
+    "url": "https://www.creditchina.gov.cn/",
+    "manual": true,
+    "note": "自动浏览器中可能空白；请手动搜索并点进信用信息详情页后按回车截图。"
+  },
+  {
+    "id": "02",
+    "name": "中华人民共和国商务部",
+    "url": "https://www.mofcom.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "03",
+    "name": "中华人民共和国海关总署",
+    "url": "http://www.customs.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "04",
+    "name": "中国裁判文书网",
+    "url": "https://wenshu.court.gov.cn/",
+    "manual": true,
+    "note": "通常需要登录或验证码，请手动完成搜索后按回车截图。"
+  },
+  {
+    "id": "05",
+    "name": "中华人民共和国工业和信息化部",
+    "url": "https://www.miit.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "06",
+    "name": "国家外汇管理局",
+    "url": "https://www.safe.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "07",
+    "name": "中国人民银行征信中心",
+    "url": "https://www.pbccrc.org.cn/",
+    "manual": false
+  },
+  {
+    "id": "08",
+    "name": "国家金融监督管理总局",
+    "url": "https://www.nfra.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "09",
+    "name": "新华网",
+    "url": "https://so.news.cn/",
+    "manual": false
+  },
+  {
+    "id": "10",
+    "name": "中华人民共和国交通运输部",
+    "url": "https://www.mot.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "11",
+    "name": "中国证券监督管理委员会",
+    "url": "https://www.csrc.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "12",
+    "name": "中国人民银行",
+    "url": "http://www.pbc.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "13",
+    "name": "中华人民共和国财政部",
+    "url": "http://www.mof.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "14",
+    "name": "中华人民共和国人力资源和社会保障部",
+    "url": "https://www.mohrss.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "15",
+    "name": "中国政府网",
+    "url": "https://www.gov.cn/",
+    "manual": false,
+    "note": "中央政府门户。核查地方主体时，建议替换成项目所在地的省级政府门户。"
+  },
+  {
+    "id": "16",
+    "name": "中国执行信息公开网",
+    "url": "https://zxgk.court.gov.cn/zhzxgk/",
+    "manual": true,
+    "note": "通常需要验证码；组织机构代码可留空，手动输验证码后查询。"
+  },
+  {
+    "id": "17",
+    "name": "国家税务总局",
+    "url": "https://www.chinatax.gov.cn/",
+    "manual": false,
+    "note": "站内检索入口，不同时期页面结构可能变化，抽查确认。"
+  },
+  {
+    "id": "18",
+    "name": "中国政府采购网",
+    "url": "https://www.ccgp.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "19",
+    "name": "中华人民共和国国家发展和改革委员会",
+    "url": "https://www.ndrc.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "20",
+    "name": "中华人民共和国农业农村部",
+    "url": "http://www.moa.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "21",
+    "name": "国家能源局",
+    "url": "http://www.nea.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "22",
+    "name": "中华人民共和国应急管理部",
+    "url": "https://www.mem.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "23",
+    "name": "中国海关企业进出口信用信息公示平台",
+    "url": "https://credit.customs.gov.cn/",
+    "manual": true,
+    "note": "常见验证码站点，请手动输入验证码并关闭弹窗后按回车截图。"
+  },
+  {
+    "id": "24",
+    "name": "中华人民共和国生态环境部",
+    "url": "https://www.mee.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "25",
+    "name": "国家市场监督管理总局",
+    "url": "https://www.samr.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "26",
+    "name": "中华人民共和国住房和城乡建设部",
+    "url": "https://www.mohurd.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "27",
+    "name": "自然资源部政府信息公开",
+    "url": "https://gi.mnr.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "28",
+    "name": "中华人民共和国自然资源部",
+    "url": "https://www.mnr.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "29",
+    "name": "中华人民共和国文化和旅游部",
+    "url": "https://www.mct.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "30",
+    "name": "国家知识产权局",
+    "url": "https://www.cnipa.gov.cn/",
+    "manual": false,
+    "note": "查专利、商标等知识产权状况。行业特定的信用平台请自行按被查主体所属行业添加。"
+  },
+  {
+    "id": "31",
+    "name": "国家统计局",
+    "url": "https://www.stats.gov.cn/",
+    "manual": false
+  },
+  {
+    "id": "32",
+    "name": "国家企业信用信息公示系统",
+    "url": "https://www.gsxt.gov.cn/index.html",
+    "manual": true,
+    "note": "搜索可能需要点选公司或过验证。"
+  },
+  {
+    "id": "33",
+    "name": "证券期货市场失信记录查询平台",
+    "url": "https://neris.csrc.gov.cn/shixinchaxun/",
+    "manual": false
+  }
+]

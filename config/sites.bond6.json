@@ -1,0 +1,45 @@
+[
+  {
+    "id": "01",
+    "name": "万得",
+    "url": "https://www.wind.com.cn/",
+    "manual": true,
+    "note": "商业数据库，需自行订阅并登录。"
+  },
+  {
+    "id": "02",
+    "name": "中国裁判文书网",
+    "url": "https://wenshu.court.gov.cn/",
+    "manual": true,
+    "note": "通常需要登录或验证码，手动完成搜索后按回车截图。"
+  },
+  {
+    "id": "03",
+    "name": "中国执行信息公开网",
+    "url": "https://zxgk.court.gov.cn/zhzxgk/",
+    "manual": true,
+    "note": "有验证码；组织机构代码可留空，输完验证码点查询后截图。"
+  },
+  {
+    "id": "04",
+    "name": "天眼查",
+    "url": "https://www.tianyancha.com/",
+    "manual": true,
+    "note": "需登录。也可换成企查查、爱企查等同类工具。"
+  },
+  {
+    "id": "05",
+    "name": "百度",
+    "url": "https://www.baidu.com/",
+    "manual": false,
+    "note": "公开搜索，用于舆情核查。"
+  },
+  {
+    "id": "06",
+    "name": "股权穿透核查",
+    "url": "https://www.qcc.com/",
+    "manual": true,
+    "searchByCompanyOnly": true,
+    "note": "一家公司搜一次、截多张不同页面的图（如股权穿透图、工商变更记录）时，加 searchByCompanyOnly 让搜索词只复制一次。"
+  }
+]

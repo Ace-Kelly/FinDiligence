@@ -1,0 +1,39 @@
+# ---- 截图输出（含客户信息，绝对不要提交）----
+截图输出_*/
+output/
+out/
+*.jpg
+*.jpeg
+*.png
+*.docx
+*.doc
+*.pdf
+
+# ---- 配置：白名单制，只有示例和公开网站清单能提交 ----
+# 默认忽略 config 下所有文件，再逐个放行不含敏感信息的
+config/*
+!config/*.example.json
+!config/*.example.txt
+!config/sites.gov33.json
+!config/sites.bond6.json
+
+# 放在仓库根目录的自用清单
+companies.txt
+companies.json
+sites.json
+*.local.json
+*.local.txt
+*.bak
+*.bak_*
+
+# ---- 常规 ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+~$*

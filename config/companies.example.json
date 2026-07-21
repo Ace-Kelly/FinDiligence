@@ -1,0 +1,54 @@
+{
+  "示例集团": {
+    "name": "示例集团有限公司",
+    "group": "发行人",
+    "sites": {
+      "01": {
+        "folderName": "01-工商信息",
+        "paragraphs": [
+          {
+            "text": "发行人：示例集团有限公司",
+            "imgName": "发行人：示例集团有限公司.jpg",
+            "searchName": "示例集团有限公司"
+          },
+          {
+            "text": "重要子公司：示例建设开发有限公司",
+            "imgName": "重要子公司：示例建设开发有限公司.jpg",
+            "searchName": "示例建设开发有限公司"
+          }
+        ]
+      },
+      "03": {
+        "folderName": "03-裁判文书",
+        "paragraphs": [
+          {
+            "text": "发行人：示例集团有限公司",
+            "imgName": "发行人：示例集团有限公司.jpg",
+            "searchName": "示例集团有限公司"
+          },
+          {
+            "text": "董事长：张三",
+            "imgName": "董事长：张三.jpg",
+            "searchName": "张三"
+          }
+        ]
+      }
+    }
+  },
+  "示例担保": {
+    "name": "示例融资担保有限公司",
+    "group": "担保人",
+    "sites": {
+      "01": {
+        "folderName": "01-工商信息",
+        "paragraphs": [
+          {
+            "text": "担保人：示例融资担保有限公司",
+            "imgName": "担保人：示例融资担保有限公司.jpg",
+            "searchName": "示例融资担保有限公司"
+          }
+        ]
+      }
+    }
+  }
+}
