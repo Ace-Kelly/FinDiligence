@@ -237,7 +237,7 @@ function New-Markdown([string]$Path, [array]$Items) {
     if (Test-Path -LiteralPath $p.imgPath) {
       [void]$sb.AppendLine("![]($($p.imgName))")
     } else {
-      Write-Warning "缺少截图，Markdown 中只保留序号和名称: $($p.imgPath)"
+      Write-Warning "缺少截图，Word 底稿中只保留序号和名称: $($p.imgPath)"
     }
     [void]$sb.AppendLine("")
     $num++
@@ -316,7 +316,7 @@ $todo = 0
     $mdPath = Join-Path $wi.siteDir "$($wi.folderName).md"
     $allExist = -not ($wi.images | Where-Object { -not (Test-Path -LiteralPath $_.imgPath) })
     if ($allExist -and (Test-Path -LiteralPath $mdPath) -and !$Overwrite) {
-      Write-Host "  [跳过] 图片和 md 都已存在"
+      Write-Host "  [跳过] 图片和 docx 底稿都已存在"
       $done += $wi.images.Count; $todo += $wi.images.Count
       continue
     }
@@ -360,12 +360,12 @@ $todo = 0
     }
 
     New-Markdown -Path $mdPath -Items $wi.images
-    Write-Host "  -> 已生成: $($wi.folderName).md"
 
     $exporter = Join-Path $Here "export_word.ps1"
     if (Test-Path -LiteralPath $exporter) {
       & $exporter -MarkdownPath $mdPath -Force -Quiet
     }
+    Write-Host "  -> 已生成: $($wi.folderName).docx"
   }
 }
 
