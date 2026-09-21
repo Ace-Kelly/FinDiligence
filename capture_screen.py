@@ -133,8 +133,7 @@ def main() -> int:
     else:
         image.save(output, optimize=True)
 
-    size_kb = output.stat().st_size / 1024
-    print(f"{output}  [{where}  {image.width}x{image.height}  {size_kb:.0f}KB]")
+    print(output)
     return 0
 
 
