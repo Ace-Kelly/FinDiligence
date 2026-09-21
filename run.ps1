@@ -129,11 +129,11 @@ if ($FromSite) { $siteList = $siteList | Where-Object { $_.id -ge $FromSite } }
 if ($ToSite)   { $siteList = $siteList | Where-Object { $_.id -le $ToSite } }
 if (!$siteList -or @($siteList).Count -eq 0) { throw "没有匹配的网站。" }
 
-$companies = $allCompanies |
-  Where-Object { !$Group   -or $_.group -eq $Group } |
-  Where-Object { !$Company -or $_.name  -match [regex]::Escape($Company) }
-if (@($companies).Count -eq 0) { throw "没有匹配的公司。" }
-$companies = $companies | Sort-Object group, name
+$targetCompanies = $allCompanies |
+  Where-Object { [string]::IsNullOrEmpty($Group)   -or $_.group -eq $Group } |
+  Where-Object { [string]::IsNullOrEmpty($Company) -or $_.name  -match [regex]::Escape($Company) -or $_.key -match [regex]::Escape($Company) }
+if (@($targetCompanies).Count -eq 0) { throw "没有匹配的公司。" }
+$targetCompanies = @($targetCompanies | Sort-Object group, name)
 
 # ---------------- helpers ----------------
 function Get-SafeName([string]$Name) {
@@ -248,7 +248,7 @@ function New-Markdown([string]$Path, [array]$Items) {
 
 # ---------------- header ----------------
 Write-Host "===== 尽调网络核查截图助手 ====="
-Write-Host "公司数: $(@($companies).Count)   网站数: $(@($siteList).Count)"
+Write-Host "公司数: $(@($targetCompanies).Count)   网站数: $(@($siteList).Count)"
 Write-Host "输出目录: $Out"
 Write-Host ""
 Write-Host "逻辑：打开一个网站 → 依次把所有公司搜一遍并截图 → 换下一个网站。"
@@ -262,7 +262,7 @@ $todo = 0
 
 :siteLoop foreach ($s in $siteList) {
   $workItems = @()
-  foreach ($c in $companies) {
+  foreach ($c in $targetCompanies) {
     $sd = $c.sites.$($s.id)
     if (!$sd -or !$sd.paragraphs -or @($sd.paragraphs).Count -eq 0) { continue }
 
